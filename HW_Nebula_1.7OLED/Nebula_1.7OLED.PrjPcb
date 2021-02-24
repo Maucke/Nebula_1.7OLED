@@ -39,7 +39,41 @@ PrefsVaultGUID=
 PrefsRevisionGUID=
 
 [Document1]
-DocumentPath=Thunder-Refix.PcbDoc
+DocumentPath=..\..\Thunder-RefixV01\HW_Thunder-RefixV01\Thunder-Refix2.PcbLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=BUCWWRHV
+
+[Document2]
+DocumentPath=..\..\Nebula_Desktop\HW_Nebula05\Nebula.PcbLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=JMYEJORQ
+
+[Document3]
+DocumentPath=Nebula_1.7OLED.PcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -55,8 +89,25 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=NMWADUKJ
 
-[Document2]
-DocumentPath=Thunder-Refix.SchDoc
+[Document4]
+DocumentPath=USB Typec.SchDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=TCNBKHJQ
+
+[Document5]
+DocumentPath=Nebula_1.7OLED.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -72,8 +123,8 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=UXVXNCJN
 
-[Document3]
-DocumentPath=Thunder-Refix1.PcbLib
+[Document6]
+DocumentPath=Nebula_1.7OLED.IntLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -87,7 +138,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=LBWYISTQ
+DocumentUniqueId=
 
 [Configuration1]
 Name=Default Configuration
