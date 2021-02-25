@@ -491,6 +491,14 @@ void OLED_UI::NUI_Out(){
 	SetTarget(POSNBAT,170) ;
 	SetTarget(DAMPTYP,0);
 }
+
+u8 DataDisType=0;
+u8 UnitDisType=0;
+u8 HWDisType=0;
+u8 Show_Float=False;
+char DataDis[20];
+char DataDisf[3];
+
 void OLED_UI::NUIDataPrss(){
 	switch(DataDisType)
 	{
@@ -692,7 +700,7 @@ OLED_STATUS OLED_UI::NUIMainShow(){
 		
 	oled.Display_bbmp(0,pit[POSNRCT].current,128,73,BMP_DataBackGround);
 	oled.Display_bbmp(89,pit[POSNRCT].current+69,35,5,Corn_BarUnit[UnitDisType],color_half);
-	oled.OLED_SF22x40(pit[POSNRCD].current,11+pit[POSNRCT].current,DataDis);
+	oled.OLED_SBFAny(pit[POSNRCD].current,11+pit[POSNRCT].current,DataDis,22,color_now);
 	if(pit[DAMPTYP].match)
 		oled.Display_bbmp(10,pit[POSNRCT].current+62,23,7,Corn_DataType[HWDisType],color_half);
 	else
@@ -700,23 +708,15 @@ OLED_STATUS OLED_UI::NUIMainShow(){
 	oled.Display_bbmp(98,11+pit[POSNRCT].current,24,24,Corn_Unit[UnitDisType],color_half);
 	if((Show_Float)&&pit[CRTVANE].target < 100)
 	{
-		oled.OLED_SF12x24(pit[POSNRCD].current+52,pit[POSNRCT].current+27,DataDisf,color_half);
+		oled.OLED_SBFAny(pit[POSNRCD].current+52,pit[POSNRCT].current+27,DataDisf,13,color_half);
 		oled.Fill_Rect(pit[POSNRCD].current+46,pit[POSNRCT].current+45,2,4,color_half);
 	}
 	oled.Display_bbmp(0,pit[POSNBAT].current,128,5,Corn_Rule);
 	oled.Display_bbmp(0,pit[POSNBAT].current+5,128,5,Corn_RuleIndex,color_half);
 	oled.Fill_Rect(3+2,pit[POSNBAR].current+2,pit[CRTVADS].current,6,color_half);
 	oled.Draw_Rect(3,pit[POSNBAR].current,121,10);
+	return OLED_IDLE;
 }
-
-
-
-
-
-
-
-
-
 
 
 void begin();
