@@ -458,11 +458,11 @@ OLED_STATUS OLED_UI::SUIMainShow(){
 	oled.Draw_Line(DT+pit[SSLRT].current,96-2,DT+108,96-2,0xFFFF);
 	oled.Draw_Line(DT+27,33+10,DT+27+73,33+10,color_min);
 	sprintf(tempstr,"%02d",Device_Msg.cputemp/10);
-	oled.OLED_SBFAny(DT+38,48,tempstr,25,0xFFFF);
+	oled.OLED_SHFAny(DT+38,48,tempstr,25,0xFFFF);
 	sprintf(tempstr,"%03d",Device_Msg.cpuload/10);
-	oled.OLED_SBFAny(DT+29-8+pit[SSLF].current,15,tempstr,10,0xFFFF);
+	oled.OLED_SHFAny(DT+29-8+pit[SSLF].current,15,tempstr,10,0xFFFF);
 	sprintf(tempstr,"%03d",Device_Msg.gputemp/10);
-	oled.OLED_SBFAny(DT+69+1+8-pit[SSLF].current,15,tempstr,10,0xFFFF);
+	oled.OLED_SHFAny(DT+69+1+8-pit[SSLF].current,15,tempstr,10,0xFFFF);
 	return OLED_IDLE;
 }
 
